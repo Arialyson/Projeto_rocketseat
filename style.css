@@ -26,6 +26,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    height: 100vh;
 
     /*short- hand == background: color image repeat position*/
 }
@@ -38,7 +39,8 @@ body * {
 
 }
 #container {
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
 }
@@ -155,4 +157,13 @@ footer {
 }
 footer a {
     text-decoration: none;
+}
+/* media queries*/
+@media(min-width:700px){
+    :root{
+        --bg-url:url(assets/bg-desktop.jpg);
+    }
+    .light {
+        --bg-url:url(assets/bg-desktop-light.jpg);
+    }
 }
